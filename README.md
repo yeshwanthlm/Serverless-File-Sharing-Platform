@@ -42,14 +42,14 @@ Use Cases:
   Execution role: IAM role with S3 write permissions \
   Code: Use the DownloadFunction Python code.
 
-* Step 4: Create an API Gateway \ 
-  Name: my-file-sharing-api-amc \ 
+* Step 4: Create an API Gateway \
+  Name: my-file-sharing-api-amc \
   Create two resources: /files with POST and GET methods. \
   For each method, configure Lambda integration with UploadFunction and DownloadFunction respectively. 
 
 * Step 5: Configure GET Method: \
   Method Request --> Edit --> Request validator --> Validate Query String Parameters and Headers \
-  Method Request --> Edit --> Request Body --> text/plain \ 
+  Method Request --> Edit --> Request Body --> text/plain \
   Integration Request --> Edit --> Mapping Templates --> Content Type: application/json --> Content Body: 
 
   ```bash
@@ -77,7 +77,7 @@ Use Cases:
 
 * Step 8: Testing \
     1. Upload a File \
-       Use Postman or another HTTP client: \ 
+       Use Postman or another HTTP client: \
        POST to https://<api-id>.execute-api.<region>.amazonaws.com/dev/files?fileName=test.txt \
        Set request body to raw and content type to text/plain. \
        Enter file content (e.g., Hello World!) and send the request.
