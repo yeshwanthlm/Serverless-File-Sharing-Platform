@@ -38,8 +38,8 @@ Use Cases:
 
 * Step 3: Create the Lambda function to handle file downloads (DownloadFunction): \
   Name: DownloadFunction \
-  Runtime: Python 3.x \ 
-  Execution role: IAM role with S3 write permissions \ 
+  Runtime: Python 3.x \
+  Execution role: IAM role with S3 write permissions \
   Code: Use the DownloadFunction Python code.
 
 * Step 4: Create an API Gateway \ 
@@ -49,7 +49,6 @@ Use Cases:
 
 * Step 5: Configure GET Method: \
   Method Request --> Edit --> Request validator --> Validate Query String Parameters and Headers \
-   
   Method Request --> Edit --> Request Body --> text/plain \ 
   Integration Request --> Edit --> Mapping Templates --> Content Type: application/json --> Content Body: 
 
