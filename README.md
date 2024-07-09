@@ -7,8 +7,8 @@ The Serverless File Sharing Platform allows users to securely upload and downloa
 
 Use Cases: 
 
-* File Sharing: Users can upload files to the platform using a POST request, specifying the file name and content. This can be useful for sharing documents, images, or any other digital assets securely. \
-* File Distribution: Content creators can distribute files (e.g., software updates, media files) to consumers by generating download links through the platform. \
+* File Sharing: Users can upload files to the platform using a POST request, specifying the file name and content. This can be useful for sharing documents, images, or any other digital assets securely. 
+* File Distribution: Content creators can distribute files (e.g., software updates, media files) to consumers by generating download links through the platform. 
 * Collaborative Work: Teams can share project resources, documents, and data securely, facilitating collaboration across different locations.
 
 ### Project Architecture:
@@ -48,7 +48,8 @@ Use Cases:
   For each method, configure Lambda integration with UploadFunction and DownloadFunction respectively. 
 
 * Step 5: Configure GET Method: \
-  Method Request --> Edit --> Request validator --> Validate Query String Parameters and Headers \ 
+  Method Request --> Edit --> Request validator --> Validate Query String Parameters and Headers \
+   
   Method Request --> Edit --> Request Body --> text/plain \ 
   Integration Request --> Edit --> Mapping Templates --> Content Type: application/json --> Content Body: 
 
