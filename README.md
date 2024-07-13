@@ -82,10 +82,26 @@ Use Cases:
        Set request body to raw and content type to text/plain. \
        Enter file content (e.g., Hello World!) and send the request.
 
-    2. Download a File \
+       or
+
+       Use CURL Utility:
+       ```bash
+       curl --location 'https://<api-id>.execute-api.<region>.amazonaws.com/dev/files?fileName=test.txt' \
+       --header 'Content-Type: text/plain' \
+       --data 'Hello World from A Monk in Cloud!'
+       ```
+
+    3. Download a File \
        Use Postman or another HTTP client: \
        GET to https://<api-id>.execute-api.<region>.amazonaws.com/dev/files?fileName=test.txt \
        Verify file content is returned correctly.
+
+       or
+
+       Use CURL Utility
+       ```bash
+       curl --location 'https://<api-id>.execute-api.<region>.amazonaws.com/dev/files?fileName=test.txt'
+       ```
   
 
 Link to the video tutorial: 
