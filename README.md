@@ -104,7 +104,7 @@ Use Cases:
        ```
   
 
-Link to the video tutorial: 
+Link to the video tutorial: https://youtu.be/TkEubrv8gA0
 
 Follow our tutorials here: https://www.youtube.com/@amonkincloud/videos \
 Follow my personal blog here:https://dev.to/yeshwanthlm/ \
